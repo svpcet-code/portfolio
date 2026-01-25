@@ -1035,8 +1035,6 @@ class PortfolioApp {
     }
 
     handleContactForm(e) {
-        e.preventDefault();
-
         const submitBtn = e.target.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
 
@@ -1046,7 +1044,9 @@ class PortfolioApp {
 
         // Check if running on localhost
         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-            // On localhost: Open Gmail with mailto
+            // On localhost: Prevent default and open Gmail with mailto
+            e.preventDefault();
+
             const name = e.target.name.value;
             const email = e.target.email.value;
             const subject = e.target.subject.value;
@@ -1074,43 +1074,10 @@ class PortfolioApp {
             return;
         }
 
-        // On production (Netlify): Use Netlify Forms
-        const formData = new FormData(e.target);
-        const data = new URLSearchParams();
-
-        // Add form-name for Netlify
-        data.append('form-name', 'portfolio-contact');
-
-        // Add all form fields
-        for (const [key, value] of formData.entries()) {
-            data.append(key, value);
-        }
-
-        // Submit to Netlify
-        fetch('/', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: data.toString()
-        })
-            .then(response => {
-                if (response.ok) {
-                    this.showNotification('✅ Message sent successfully! I\'ll get back to you soon.', 'success');
-                    e.target.reset();
-                } else {
-                    throw new Error('Network response was not ok');
-                }
-            })
-            .catch((error) => {
-                console.error('Form submission failed:', error);
-                this.showNotification('❌ Failed to send message. Please try emailing me directly at shubhamdongare912@gmail.com', 'error');
-            })
-            .finally(() => {
-                // Restore button state
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            });
+        // On production (Netlify): Do NOT prevent default
+        // Let Netlify capture the form submission natively
+        // Just show loading state and let the form submit
+        // Netlify will redirect to action="/" after successful submission
     }
 
     // Remove EmailJS initialization since we're using Netlify forms
