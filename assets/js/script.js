@@ -239,9 +239,9 @@ class PortfolioApp {
             }
             // Set dark theme profile picture with smooth transition
             if (profileImage) {
-                this.switchProfileImage(profileImage, './assets/ele/profile_pic.png', 'Tirth Patel - Developer Illustration (Dark Theme)', 'brightness(0.7) contrast(1.1) hue-rotate(0) saturate(1)');
-                // this.switchProfileImage(profileImage, './assets/ele/profile1.jpg', 'Tirth Patel - Developer Illustration (Dark Theme)', 'brightness(0.7) contrast(1.1) hue-rotate(0) saturate(1)');
-                // this.switchProfileImage(profileImage, './assets/ele/profile_pic.jpg', 'Tirth Patel - Developer Illustration (Dark Theme)', 'none');
+                this.switchProfileImage(profileImage, './assets/ele/profile_pic.png', 'Shubham Dongare - Developer Illustration (Dark Theme)', 'brightness(0.7) contrast(1.1) hue-rotate(0) saturate(1)');
+                // this.switchProfileImage(profileImage, './assets/ele/profile1.jpg', 'Shubham Dongare - Developer Illustration (Dark Theme)', 'brightness(0.7) contrast(1.1) hue-rotate(0) saturate(1)');
+                // this.switchProfileImage(profileImage, './assets/ele/profile_pic.jpg', 'Shubham Dongare - Developer Illustration (Dark Theme)', 'none');
 
             }
         } else {
@@ -251,8 +251,8 @@ class PortfolioApp {
             }
             // Set light theme profile picture with smooth transition
             if (profileImage) {
-                // this.switchProfileImage(profileImage, './assets/ele/profile_graba1.jpg', 'Tirth Patel - Developer Illustration (Light Theme)', 'none');
-                this.switchProfileImage(profileImage, './assets/ele/profile2.jpg', 'Tirth Patel - Developer Illustration (Light Theme)', 'none');
+                // this.switchProfileImage(profileImage, './assets/ele/profile_graba1.jpg', 'Shubham Dongare - Developer Illustration (Light Theme)', 'none');
+                this.switchProfileImage(profileImage, './assets/ele/profile2.jpg', 'Shubham Dongare - Developer Illustration (Light Theme)', 'none');
             }
         }
         
@@ -824,7 +824,7 @@ class PortfolioApp {
                     description: "A responsive personal website showcasing projects with modern design patterns and animations.",
                     technologies: ["HTML5", "CSS3", "JavaScript", "Modern Design"],
                     category: "web",
-                    githubUrl: "https://github.com/rushhiii/portfolio",
+                    githubUrl: "https://github.com/svpcet-code",
                     liveUrl: "#",
                     featured: true
                 },
@@ -834,7 +834,7 @@ class PortfolioApp {
                     description: "Full-stack web application for task management with real-time updates and user authentication.",
                     technologies: ["React", "Node.js", "MongoDB", "Express"],
                     category: "web",
-                    githubUrl: "https://github.com/rushhiii/task-manager",
+                    githubUrl: "  ",
                     liveUrl: "#",
                     featured: true
                 },
@@ -844,7 +844,7 @@ class PortfolioApp {
                     description: "Intelligent chatbot using natural language processing for automated customer support.",
                     technologies: ["Python", "Machine Learning", "NLP", "TensorFlow"],
                     category: "ai",
-                    githubUrl: "https://github.com/rushhiii/ai-chatbot",
+                    githubUrl: "  ",
                     liveUrl: "#",
                     featured: true
                 }
@@ -1074,7 +1074,7 @@ class PortfolioApp {
             })
             .catch((error) => {
                 console.error('Form submission failed:', error);
-                this.showNotification('❌ Failed to send message. Please try emailing me directly at rushiofficial1205@gmail.com', 'error');
+                this.showNotification('❌ Failed to send message. Please try emailing me directly at shubhamdongare912@gmail.com', 'error');
             })
             .finally(() => {
                 // Restore button state

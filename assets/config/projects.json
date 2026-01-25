@@ -7,21 +7,21 @@
       "technologies": ["JavaScript", "iOS", "Scriptable"],
       "category": "automation",
       "image": "./assets/projects/scriptable.png",
-      "githubUrl": "https://github.com/rushhiii/Scriptable-IOSWidgets",
-      "liveUrl": "https://rushhiii.github.io/Scriptable-IOSWidgets/",
+      "githubUrl": "https://github.com/svpcet-code/Scriptable-IOSWidgets",
+      "liveUrl": "https://svpcet-code.github.io/Scriptable-IOSWidgets/",
       "liveLabel": "Docs",
       "liveIcon": "fas fa-book",
       "featured": true
     },
     {
       "id": 2,
-      "title": "Rushi Bashfolio",
+      "title": "Shubham Bashfolio",
       "description": "A unique terminal-style portfolio website that showcases skills and projects through an interactive command-line interface.",
       "technologies": ["JavaScript", "CSS", "Terminal UI"],
       "category": "web",
       "image": "./assets/projects/bashfolio.png",
-      "githubUrl": "https://github.com/rushhiii/Rushi-Bashfolio",
-      "liveUrl": "https://rushi-bashfolio.netlify.app",
+      "githubUrl": "https://github.com/svpcet-code/Shubham-Bashfolio",
+      "liveUrl": "https://shubham-bashfolio.netlify.app",
       "featured": true
     },
     {
@@ -31,8 +31,8 @@
       "technologies": ["JavaScript", "Scriptable", "iOS Widgets", "GitHub API"],
       "category": "automation",
       "image": "./assets/projects/githubstats.png",
-      "githubUrl": "https://github.com/rushhiii/Scriptable-IOSWidgets/blob/main/Widgets/GitHubStats%20Widget/MyGitHubStats.js",
-      "liveUrl": "https://rushhiii.github.io/Scriptable-IOSWidgets/widgets/github-stats-widget.html",
+      "githubUrl": "https://github.com/svpcet-code/Scriptable-IOSWidgets/blob/main/Widgets/GitHubStats%20Widget/MyGitHubStats.js",
+      "liveUrl": "https://svpcet-code.github.io/Scriptable-IOSWidgets/widgets/github-stats-widget.html",
       "liveLabel": "Docs", 
       "liveIcon": "fas fa-book",
       "featured": true
