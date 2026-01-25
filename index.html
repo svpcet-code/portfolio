@@ -564,31 +564,6 @@
         </div>
     </footer>
     <!-- Scripts -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('contactForm');
-
-            form.addEventListener('submit', function(event) {
-                // Check if running on localhost
-                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                    event.preventDefault(); // Prevent default form submission
-
-                    // Get form values
-                    const name = form.name.value;
-                    const email = form.email.value;
-                    const subject = form.subject.value;
-                    const message = form.message.value;
-
-                    // Create mailto link
-                    const mailtoLink = `mailto:shubhamdongare912@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message)}`;
-
-                    // Open the user's default email client
-                    window.location.href = mailtoLink;
-                }
-                // If not localhost, allow Netlify form submission
-            });
-        });
-    </script>
     <script src="./assets/js/script.js"></script>
     <script>
         const cards = document.querySelectorAll('.project-card');
@@ -634,30 +609,6 @@
         });
 
     </script>
-    <script>
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-    // Agar localhost pe hai → Gmail open karo
-    if (window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost") {
-        e.preventDefault();
-
-        const name = this.name.value;
-        const email = this.email.value;
-        const subject = this.subject.value;
-        const message = this.message.value;
-
-        const mailtoLink =
-            `mailto:shubhamdongare912@gmail.com` +
-            `?subject=${encodeURIComponent(subject)}` +
-            `&body=${encodeURIComponent(
-                "Name: " + name + "\n" +
-                "Email: " + email + "\n\n" +
-                message
-            )}`;
-
-        window.location.href = mailtoLink;
-    }
-});
-</script>
 
 </body>
 

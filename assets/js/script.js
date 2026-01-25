@@ -1044,7 +1044,37 @@ class PortfolioApp {
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
 
-        // Prepare form data for Netlify
+        // Check if running on localhost
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            // On localhost: Open Gmail with mailto
+            const name = e.target.name.value;
+            const email = e.target.email.value;
+            const subject = e.target.subject.value;
+            const message = e.target.message.value;
+
+            const mailtoLink =
+                `mailto:shubhamdongare912@gmail.com` +
+                `?subject=${encodeURIComponent(subject)}` +
+                `&body=${encodeURIComponent(
+                    "Name: " + name + "\n" +
+                    "Email: " + email + "\n\n" +
+                    message
+                )}`;
+
+            // Open Gmail
+            window.location.href = mailtoLink;
+
+            // Show success message
+            setTimeout(() => {
+                this.showNotification('Opening Gmail... Complete the email and send it manually.', 'info');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 500);
+
+            return;
+        }
+
+        // On production (Netlify): Use Netlify Forms
         const formData = new FormData(e.target);
         const data = new URLSearchParams();
 
@@ -1066,7 +1096,7 @@ class PortfolioApp {
         })
             .then(response => {
                 if (response.ok) {
-                    this.showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+                    this.showNotification('✅ Message sent successfully! I\'ll get back to you soon.', 'success');
                     e.target.reset();
                 } else {
                     throw new Error('Network response was not ok');
