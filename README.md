@@ -14,7 +14,7 @@ It highlights my projects, technical skills, and provides a way to contact me.
 - Netlify (for deployment)
 
 ## 🌐 Live Demo
-👉 https://your-portfolio-name.netlify.app
+👉 shubham-neurons.netlify.app
 
 ## 📂 Features
 - Responsive design (mobile & desktop)
