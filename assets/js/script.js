@@ -133,6 +133,18 @@ class PortfolioApp {
             }
         });
 
+        // Dynamic Island Notch Interaction
+        const navbar = document.querySelector('.navbar');
+        if (navbar) {
+            navbar.addEventListener('mouseenter', () => navbar.classList.add('expanded'));
+            navbar.addEventListener('mouseleave', () => navbar.classList.remove('expanded'));
+            navbar.addEventListener('click', (e) => {
+                if (e.target.closest('.nav-logo') || e.target === navbar) {
+                    navbar.classList.toggle('expanded');
+                }
+            });
+        }
+
         // Theme toggle
         const themeToggle = document.getElementById('themeToggle');
         if (themeToggle) {
