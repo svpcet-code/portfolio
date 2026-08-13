@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Shubham's Portfolio</title>
+    <meta name="description"
+        content="Shubham Dongare - Computer Science student at Rashtrasant Tukdoji Maharaj University. Passionate full-stack developer specializing in Python, JavaScript, AI/ML, and automation. View my projects and experience.">
+    <meta name="keywords"
+        content="Shubh, Shubham Dongare, Computer Science, Full Stack Developer, Python Developer, JavaScript, AI, Machine Learning, Toronto Metropolitan University, Portfolio, Web Development, Software Engineer">
+    <meta name="author" content="Shubham Dongare">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    
+
+    <!-- Open Graph Meta Tags (Social Media) -->
+    <meta property="og:title" content="Shubham's Portfolio | Computer Science Student & Developer">
+    <meta property="og:description"
+        content="Computer Science student passionate about creating innovative solutions and exploring AI. Check out my projects and experience in full-stack development.">
+  
+    <meta property="og:url" content="shubham-neurons.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shubham's Portfolio">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shubham's Portfolio | Computer Science Student & Developer">
+    <meta name="twitter:description"
+        content="Computer Science student passionate about creating innovative solutions and exploring AI. Check out my projects and experience.">
+    <meta name="twitter:image" content="https://shubham-neurons.netlify.app/assets/ele/repo_banner.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="shubham-neurons.netlify.app">
+
+    <!-- Favicon and Icons -->
+    <!-- Primary favicon with cache buster -->
+    <link rel="icon" type="image/png" href="./assets/ele/logo_variations/fav_icon.png?v=1.0" sizes="96x96" />
+    <!-- Fallback favicon for browsers that don't support PNG -->
+    <link rel="shortcut icon" href="./assets/ele/logo_variations/fav_icon.png?v=1.0" type="image/png" />
+    <!-- Apple touch icon for iOS devices -->
+    <link rel="apple-touch-icon" href="./assets/ele/logo_variations/fav_icon.png?v=1.0" sizes="180x180" />
+    <!-- Android Chrome icon -->
+    <link rel="icon" type="image/png" href="./assets/ele/logo_variations/fav_icon.png?v=1.0" sizes="192x192" />
+    <!-- Windows tile icon -->
+    <meta name="msapplication-TileImage" content="./assets/ele/logo_variations/fav_icon.png?v=1.0" />
+    <meta name="theme-color" content="#8b5cf6" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shubham Dongare",
+      "alternateName": "Shubh",
+      "description": "Computer Science student at Rastrasant Tukdoji Maharaj University passionate about full-stack development, AI, and automation",
+      "jobTitle": "Computer Science Student & Full-Stack Developer",
+      "url": "https://shubham-neurons.netlify.app",
+      "image": "https://shubham-neurons.netlify.app/assets/ele/profile_pic.png",
+      "sameAs": [
+        "https://github.com/svpcet-code",
+        "https:https://www.linkedin.com/in/shubham-dongare-b0b816328/",
+        "https:https://www.instagram.com/shubhamdongare900?igsh=NTNuYzlkNWdleWgx",
+        "https://linktr.ee/shubhamdongare912"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Rashtrasant Tukdoji Maharaj University"
+      },
+      "knowsAbout": [
+        "Python Programming",
+        "JavaScript Development", 
+        "Full-Stack Development",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Web Development",
+        "C/C++ Programming",
+        "Java Programming",
+        "Database Management",
+        "Git Version Control"
+      ],
+      "email": "shubhamdongare912@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "karanja",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "India"
+      }
+    }
+    </script>
+
+    <!-- Structured Data for Portfolio Projects -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "shubham's Portfolio Projects",
+      "itemListElement": [
+        {
+          "@type": "SoftwareApplication",
+          "position": 1,
+          "name": "Scriptable iOS Widgets",
+          "description": "A collection of Scriptable app widgets for iOS that provide useful information and functionality right on your home screen.",
+          "programmingLanguage": ["JavaScript"],
+          "applicationCategory": "Productivity",
+          "operatingSystem": "iOS",
+          "url": "",
+          "author": {
+            "@type": "Person",
+            "name": "Shubham Dongare"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "position": 2,
+          "name": "Shubham Bashfolio",
+          "description": "A unique terminal-style portfolio website that showcases skills and projects through an interactive command-line interface.",
+          "programmingLanguage": ["JavaScript", "CSS", "HTML"],
+          "url": "https://shubham-bashfolio.netlify.app",
+          "author": {
+            "@type": "Person",
+            "name": "Shubham Dongare"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 3,
+          "name": "GitHub Widget",
+          "description": "Track your GitHub stats with dynamic layouts and theme support on iOS home screen using Scriptable.",
+          "programmingLanguage": ["JavaScript"],
+          "applicationCategory": "Productivity",
+          "operatingSystem": "iOS",
+          "url": "",
+          "author": {
+            "@type": "Person",
+            "name": "Shubham Dongare"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Stylesheets and Fonts -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/whiteboard-semibold.css"> -->
+    <!-- <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/sharp-duotone-solid.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/v7.0.0/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/regular.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="./assets/ele/letter_logo_gl.png" alt="Logo" class="loading-logo-img">
+                <div class="loading-logo-glow"></div>
+            </div>
+            <div class="loading-text">
+                <h1 class="loading-title">
+                    <span class="loading-word">Welcome</span>
+                    <span class="loading-word">to</span>
+                    <span class="loading-word">my</span>
+                    <span class="loading-word">portfolio.</span>
+                </h1>
+            </div>
+        </div>
+        <div class="loading-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./assets/ele/letter_logo_gl.png" alt="Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <!-- <li><a href="./nexus_card.html" class="nav-link">Profile Card</a></li> -->
+            </ul>
+            <div class="nav-actions">
+                <a href="https://github.com/svpcet-code/portfolio" class="github-repo-btn" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visit GitHub Repository">
+                    <!-- <i class="fab fa-link"></i> -->
+                    <span>Visit Repo</span>
+                    <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                    <!-- <i class="fa-light fa-square-arrow-up-right"></i> -->
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="floating-elements">
+                <div class="floating-card parallax-medium" data-speed="2">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="floating-card parallax-fast" data-speed="3">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="floating-card parallax-slow" data-speed="2.5">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <div class="floating-card parallax-medium" data-speed="1.5">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="floating-card parallax-fast" data-speed="1">
+                    <i class="fab fa-react"></i>
+                </div>
+                <!-- <div class="floating-card" data-speed="1.8">
+                    <i class="fab fa-css3-alt"></i>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-gradient">Shubham Dongare</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="typing-text">Computer Science Student</span>
+                    <span class="cursor">|</span>
+                </p>
+                <p class="hero-description">
+                    Computer Science student passionate about creating innovative solutions
+                    and exploring the frontiers of artificial intelligence.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://github.com/svpcet-code" class="btn btn-primary" target="_blank">
+                        <span>GitHub Profile</span>
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="./assets/Shubham_Dongare_Resume.pdf" class="btn btn-secondary" target="_blank" download="Shubham_Dongare_Resume.pdf">
+                        <span>Resume</span>
+                        <i class="fa-solid fa-file-lines"></i>
+                    </a>
+                    <a href="./assets/nexus-card/index.html" class="btn btn-secondary" title="visit my nexus card?">
+                        <!-- <span>Nexus Card</span> -->
+                        <i class="fas fa-id-card"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="./assets/ele/profile_pic.png" alt="Shubham Dongare - Developer Illustration"
+                        class="profile-image" data-theme-image="true">
+                    <div class="image-glow"></div>
+                </div>
+                <div class="status-badge">
+                    <div class="status-indicator"></div>
+                    <!-- <span>Open to work</span> -->
+                    <!-- <span>On summer break</span> -->
+                    <!-- <span>Looking for Co=Op, Summer 2026</span> -->
+                    <span>Full-time student
+                        <!-- <br>Looking for Co-Op, Summer 2026 -->
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Crafting Digital Experiences</h2>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card large scroll-reveal-left scroll-stagger-1 glow-border">
+                    <div class="card-content">
+                        <h3>My Journey</h3>
+                        <p>Started coding in Grade 11 with curiosity, now pursuing Computer Science at Toronto
+                            Metropolitan University. What began as simple console apps has evolved into a passion for
+                            creating meaningful digital experiences.</p>
+                        <!-- <h3>My Coding Journey</h3> -->
+                        <!-- <p>I still remember the first time I touched a computer with intention — it was in Grade 11. What started as curiosity about solving logic problems became my obsession. From barely knowing how to type to building automation tools and exploring C, C++, and UNIX, I'm now a 2nd Year Computer Science Student at Toronto Metropolitan University.</p> -->
+                        <div class="journey-stats">
+                            <div class="stat scroll-reveal-scale scroll-stagger-2">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years Coding</span>
+                            </div>
+                            <div class="stat scroll-reveal-scale scroll-stagger-3">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Projects Built</span>
+                            </div>
+                            <!-- <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Repositories</span>
+                            </div> -->
+                            <!-- <div class="stat">
+                                <span class="stat-number">3.8</span>
+                                <span class="stat-label">GPA</span>
+                            </div> -->
+                            <div class="stat scroll-reveal-scale scroll-stagger-4">
+                                <span class="stat-number">RTMNU</span>
+                                <span class="stat-label">University</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card scroll-reveal-right scroll-stagger-2">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>2nd Year Computer Science<br>RTMNU University</p>
+                        <!-- <p>2nd Year Computer Science Student<br>RTMNU University</p> -->
+                        <span class="card-meta">2026 - Present</span>
+                    </div>
+                </div>
+
+                <div class="bento-card scroll-reveal-right scroll-stagger-3">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                            <!-- <i class="fas fa-code"></i> -->
+                        </div>
+                        <h3>Passion</h3>
+                        <!-- <h3>Focus Areas</h3> -->
+                        <div class="focus-tags">
+                            <span class="tag">Full-Stack Development</span>
+                            <span class="tag">AI & ML</span>
+                            <span class="tag">Automation</span>
+                            <!-- <span class="tag">UNIX</span> -->
+                        </div>
+                        <!-- <p style="font-style:italic;margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">Perfection isn't the goal. Precision is.</p> -->
+                    </div>
+                </div>
+
+                <div class="bento-card wide scroll-reveal scroll-stagger-4 glow-border">
+                    <div class="card-content">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-badges">
+                            <div class="tech-badge html scroll-reveal-scale scroll-stagger-1">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-badge css scroll-reveal-scale scroll-stagger-2">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-badge javascript scroll-reveal-scale scroll-stagger-3">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-badge python scroll-reveal-scale scroll-stagger-4">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-badge java scroll-reveal-scale scroll-stagger-5">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="tech-badge cpp scroll-reveal-scale scroll-stagger-6">
+                                <i class="fas fa-code"></i>
+                                <span>C/C++</span>
+                            </div>
+                            <div class="tech-badge nodejs scroll-reveal-scale scroll-stagger-1">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-badge bootstrap scroll-reveal-scale scroll-stagger-2">
+                                <i class="fab fa-bootstrap"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="tech-badge git scroll-reveal-scale scroll-stagger-3">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="tech-badge github scroll-reveal-scale scroll-stagger-4">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="tech-badge mysql scroll-reveal-scale scroll-stagger-5">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="tech-badge figma scroll-reveal-scale scroll-stagger-6">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="project-filters scroll-reveal-scale scroll-stagger-1">
+                <!-- Filter buttons will be dynamically generated from projects.json -->
+            </div>
+
+            <div class="projects-grid scroll-reveal scroll-stagger-2" id="projectsGrid">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+
+            <div class="projects-cta scroll-reveal scroll-stagger-3">
+                <p>Interested in seeing more?</p>
+                <a href="https://github.com/svpcet-code" class="btn btn-outline" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>View All on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something Amazing Together</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card scroll-reveal-left scroll-stagger-1">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>shubhamdongare912@gmail.com</p>
+                        <a href="mailto:shubhamdongare912@gmail.com" class="contact-link">Send Message</a>
+                    </div>
+
+                    <div class="contact-card scroll-reveal-left scroll-stagger-2">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Let's connect professionally</p>
+                        <a href="https://www.linkedin.com/in/shubham-dongare-b0b816328/" target="_blank"
+                            class="contact-link">Connect</a>
+                    </div>
+
+                    <div class="contact-card scroll-reveal-left scroll-stagger-3">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>Check out my repositories</p>
+                        <a href="https://github.com/svpcet-code" target="_blank" class="contact-link">Follow</a>
+                    </div>
+                </div>
+
+                <form class="contact-form scroll-reveal-right scroll-stagger-2 glow-border" id="contactForm"
+                    name="portfolio-contact" method="POST" data-netlify="true" action="/"
+                    netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="portfolio-contact">
+                    <!-- Honeypot field for spam protection -->
+                    <div style="display: none;">
+                        <input name="bot-field">
+                    </div>
+                    <div class="form-group scroll-reveal scroll-stagger-3">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group scroll-reveal scroll-stagger-4">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group scroll-reveal scroll-stagger-5">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group scroll-reveal scroll-stagger-6">
+                        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary scroll-reveal-scale scroll-stagger-6">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="./assets/ele/letter_logo_gl.png" alt="Logo" class="logo-img">
+                    </div>
+                    <!-- <p>Building the future, one line of code at a time.</p> -->
+                    <p style="font-style:italic">Perfection isn't the goal. Precision is.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://github.com/svpcet-code" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shubham-dongare-b0b816328/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href=\"mailto:shubhamdongare912@gmail.com\" aria-label=\"Email\">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shubhamdongare900?igsh=NTNuYzlkNWdleWgx" target="_blank" aria-label="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                       
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Shubham Dongare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script>
+        const cards = document.querySelectorAll('.project-card');
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transition = 'all 0.05s ease-out';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transition = 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px) scale(1)';
+            });
+
+            card.addEventListener('mousemove', (e) => {
+                if (!isLoaded) return;
+
+                const cardRect = card.getBoundingClientRect();
+                const cardCenterX = cardRect.left + cardRect.width / 2;
+                const cardCenterY = cardRect.top + cardRect.height / 2;
+
+                const deltaX = e.clientX - cardCenterX;
+                const deltaY = e.clientY - cardCenterY;
+
+                const rotateX = (deltaY / cardRect.height) * -15;
+                const rotateY = (deltaX / cardRect.width) * 15;
+
+                const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+                const maxDistance = Math.sqrt(cardRect.width * cardRect.width + cardRect.height * cardRect.height) / 2;
+                const proximity = 1 - Math.min(distance / maxDistance, 1);
+
+                const scale = 1 + (proximity * 0.05);
+                const translateZ = proximity * 20;
+
+                card.style.transform = `
+                        perspective(1000px) 
+                        rotateX(${rotateX}deg) 
+                        rotateY(${rotateY}deg) 
+                        translateZ(${translateZ}px) 
+                        scale(${scale})
+                    `;
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

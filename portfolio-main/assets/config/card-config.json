@@ -1,0 +1,63 @@
+{
+    "profile": {
+        "name": "Shubham Dongare",
+        "tagline": "Full Stack Developer & AI/ML Enthusiast",
+        "location": "Maharashtra, India",
+        "bannerImage": "../ele/card_banner.png",
+        "profileImage": "../ele/profile_pic.png",
+        "themeColor": "#8b5cf6"
+    },
+    "skills": [
+        "Full Stack Developer",
+        "Tech Explorer"
+    ],
+    "socialLinks": [
+        {
+            "platform": "Discord",
+            "url": "https://discord.com/users/757054095985999923",
+            "icon": "discord",
+            "tooltip": "Discord"
+        },
+        {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/shubham-dongare-b0b816328/",
+            "icon": "linkedin",
+            "tooltip": "LinkedIn"
+        },
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/svpcet-code",
+            "icon": "github",
+            "tooltip": "GitHub"
+        },
+        {
+            "platform": "Email",
+            "url": "mailto:shubhamdongare912@gmail.com",
+            "icon": "email",
+            "tooltip": "Email"
+        },
+        {
+            "platform": "linktree",
+            "url": "https://linktr.ee/shubhamdongare912",
+            "icon": "linktree",
+            "tooltip": "Linktree"
+        }
+    ],
+    "footer": {
+        "text": "Made by Shubham",
+        "url": "https://github.com/svpcet-code",
+        "showHeart": true
+    },
+    "animations": {
+        "enableHover3D": true,
+        "enableRippleEffect": true,
+        "enableParallax": true
+    },
+    "customization": {
+        "cardWidth": "430px",
+        "cardBorderRadius": "24px",
+        "glowIntensity": "20px",
+        "backgroundType": "solid",
+        "backgroundColor": "#000000"
+    }
+}
