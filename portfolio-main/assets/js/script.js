@@ -933,15 +933,16 @@ class PortfolioApp {
             `<span class="tag">${tech}</span>`
         ).join('');
 
-        // Default image if none provided
-        const projectImage = project.image || 'assets/default-project.png';
+        const projectImageHtml = project.image ? `
+            <img src="${project.image}" alt="${project.title}" class="project-image parallax-slow" loading="lazy" 
+                 onerror="this.src='https://via.placeholder.com/400x200/1a1a2e/6366f1?text=${encodeURIComponent(project.title)}'">
+        ` : '';
 
         // Generate buttons based on project configuration
         const buttons = this.generateProjectButtons(project);
 
         card.innerHTML = `
-            <img src="${projectImage}" alt="${project.title}" class="project-image parallax-slow" loading="lazy" 
-                 onerror="this.src='https://via.placeholder.com/400x200/1a1a2e/6366f1?text=${encodeURIComponent(project.title)}'">
+            ${projectImageHtml}
             <div class="project-content">
                 <div class="project-header">
                     <h3>${project.title}</h3>

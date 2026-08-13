@@ -2,39 +2,35 @@
   "projects": [
     {
       "id": 1,
-      "title": "Scriptable iOS Widgets",
-      "description": "A collection of Scriptable app widgets for iOS that provide useful information and functionality right on your home screen.",
-      "technologies": ["JavaScript", "iOS", "Scriptable"],
-      "category": "automation",
-      "image": "./assets/projects/scriptable.png",
-      "githubUrl": "https://github.com/svpcet-code/Scriptable-IOSWidgets",
-      "liveUrl": "https://svpcet-code.github.io/Scriptable-IOSWidgets/",
-      "liveLabel": "Docs",
-      "liveIcon": "fas fa-book",
+      "title": "ORBIS — AI-Powered Career & Financial Intelligence Platform",
+      "description": "Built an AI-driven platform helping students choose between Abroad, Government, and Private career paths with data-backed ROI modeling. Implemented Admission Probability Score, Visa Success Estimate, Loan Risk Simulation, and Neural AI Avatar.",
+      "technologies": ["Next.js", "React", "Python", "PostgreSQL", "OpenAI API"],
+      "category": "web",
+      "image": "",
+      "githubUrl": "https://github.com/atharvajoshi189/Orbis.git",
+      "liveUrl": "",
       "featured": true
     },
     {
       "id": 2,
-      "title": "Shubham Bashfolio",
-      "description": "A unique terminal-style portfolio website that showcases skills and projects through an interactive command-line interface.",
-      "technologies": ["JavaScript", "CSS", "Terminal UI"],
+      "title": "Life.OS — Emotional Memory Operating System",
+      "description": "Designed a futuristic personal memory vault with emotional analytics — Happiness Ratio, Growth Momentum, and Stability Index. Built cinematic Memory Replay Mode with life chapter organization.",
+      "technologies": ["Next.js 14", "TypeScript", "Tailwind CSS", "Framer Motion"],
       "category": "web",
-      "image": "./assets/projects/bashfolio.png",
-      "githubUrl": "https://github.com/svpcet-code/Shubham-Bashfolio",
-      "liveUrl": "https://shubham-bashfolio.netlify.app",
+      "image": "",
+      "githubUrl": "https://github.com/svpcet-code/Life.os.git",
+      "liveUrl": "",
       "featured": true
     },
     {
       "id": 3,
-      "title": "GitHub Widget",
-      "description": "Track your GitHub stats — commits, contributions, Heatmap, streaks, PRs, issues, and repo insights — all beautifully displayed on your iOS home screen using Scriptable with dynamic layouts and theme support.",
-      "technologies": ["JavaScript", "Scriptable", "iOS Widgets", "GitHub API"],
-      "category": "automation",
-      "image": "./assets/projects/githubstats.png",
-      "githubUrl": "https://github.com/svpcet-code/Scriptable-IOSWidgets/blob/main/Widgets/GitHubStats%20Widget/MyGitHubStats.js",
-      "liveUrl": "https://svpcet-code.github.io/Scriptable-IOSWidgets/widgets/github-stats-widget.html",
-      "liveLabel": "Docs", 
-      "liveIcon": "fas fa-book",
+      "title": "HMS — Hospital Management System",
+      "description": "Full-stack hospital management system with role-based authentication (Admin, Doctor, Patient). Modules include Patient Records, Doctor Directory, Appointment Booking, Bed Management, and Lab tracking.",
+      "technologies": ["Next.js 15", "Prisma", "PostgreSQL", "NextAuth.js", "Tailwind CSS"],
+      "category": "web",
+      "image": "",
+      "githubUrl": "https://github.com/svpcet-code/HMS.git",
+      "liveUrl": "",
       "featured": true
     }
   ],
@@ -49,18 +45,6 @@
       "id": "web",
       "name": "Web Dev",
       "icon": "fa-solid fa-globe",
-      "visible": true
-    },
-    {
-      "id": "education",
-      "name": "Educational",
-      "icon": "fa-solid fa-graduation-cap",
-      "visible": false
-    },
-    {
-      "id": "automation",
-      "name": "Automation",
-      "icon": "fa-solid fa-robot",
       "visible": true
     }
   ]
