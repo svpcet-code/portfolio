@@ -10,7 +10,7 @@
     <meta name="description"
         content="Shubham Dongare - Computer Science student at Rashtrasant Tukdoji Maharaj University. Passionate full-stack developer specializing in Python, JavaScript, AI/ML, and automation. View my projects and experience.">
     <meta name="keywords"
-        content="Shubh, Shubham Dongare, Computer Science, Full Stack Developer, Python Developer, JavaScript, AI, Machine Learning, Toronto Metropolitan University, Portfolio, Web Development, Software Engineer">
+        content="Shubh, Shubham Dongare, Computer Science, Full Stack Developer, Python Developer, JavaScript, AI, Machine Learning, SVPCET Nagpur, Portfolio, Web Development, Software Engineer">
     <meta name="author" content="Shubham Dongare">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -22,7 +22,7 @@
     <meta property="og:description"
         content="Computer Science student passionate about creating innovative solutions and exploring AI. Check out my projects and experience in full-stack development.">
   
-    <meta property="og:url" content="shubham-neurons.netlify.app">
+    <meta property="og:url" content="https://shubham-neurons.netlify.app">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Shubham's Portfolio">
 
@@ -31,10 +31,10 @@
     <meta name="twitter:title" content="Shubham's Portfolio | Computer Science Student & Developer">
     <meta name="twitter:description"
         content="Computer Science student passionate about creating innovative solutions and exploring AI. Check out my projects and experience.">
-    <meta name="twitter:image" content="https://shubham-neurons.netlify.app/assets/ele/repo_banner.png">
+    <meta name="twitter:image" content="https://shubham-neurons.netlify.app/assets/ele/profile_pic.png">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="shubham-neurons.netlify.app">
+    <link rel="canonical" href="https://shubham-neurons.netlify.app">
 
     <!-- Favicon and Icons -->
     <!-- Primary favicon with cache buster -->
@@ -62,8 +62,8 @@
       "image": "https://shubham-neurons.netlify.app/assets/ele/profile_pic.png",
       "sameAs": [
         "https://github.com/svpcet-code",
-        "https:https://www.linkedin.com/in/shubham-dongare-b0b816328/",
-        "https:https://www.instagram.com/shubhamdongare900?igsh=NTNuYzlkNWdleWgx",
+        "https://www.linkedin.com/in/shubham-dongare-b0b816328/",
+        "https://www.instagram.com/shubhamdongare900?igsh=NTNuYzlkNWdleWgx",
         "https://linktr.ee/shubhamdongare912"
       ],
       "alumniOf": {
@@ -97,29 +97,29 @@
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "shubham's Portfolio Projects",
+      "name": "Shubham's Portfolio Projects",
       "itemListElement": [
         {
           "@type": "SoftwareApplication",
           "position": 1,
-          "name": "Scriptable iOS Widgets",
-          "description": "A collection of Scriptable app widgets for iOS that provide useful information and functionality right on your home screen.",
-          "programmingLanguage": ["JavaScript"],
-          "applicationCategory": "Productivity",
-          "operatingSystem": "iOS",
-          "url": "",
+          "name": "ORBIS — AI-Powered Career & Financial Intelligence Platform",
+          "description": "Built an AI-driven platform helping students choose between Abroad, Government, and Private career paths with data-backed ROI modeling.",
+          "programmingLanguage": ["Next.js", "React", "Python", "PostgreSQL"],
+          "applicationCategory": "ProductivityApplication",
+          "url": "https://github.com/atharvajoshi189/Orbis.git",
           "author": {
             "@type": "Person",
             "name": "Shubham Dongare"
           }
         },
         {
-          "@type": "WebSite",
+          "@type": "SoftwareApplication",
           "position": 2,
-          "name": "Shubham Bashfolio",
-          "description": "A unique terminal-style portfolio website that showcases skills and projects through an interactive command-line interface.",
-          "programmingLanguage": ["JavaScript", "CSS", "HTML"],
-          "url": "https://shubham-bashfolio.netlify.app",
+          "name": "Life.OS — Emotional Memory Operating System",
+          "description": "Designed a futuristic personal memory vault with emotional analytics, Happiness Ratio, Growth Momentum, and Stability Index.",
+          "programmingLanguage": ["Next.js", "TypeScript", "Tailwind CSS"],
+          "applicationCategory": "ProductivityApplication",
+          "url": "https://github.com/svpcet-code/Life.os.git",
           "author": {
             "@type": "Person",
             "name": "Shubham Dongare"
@@ -128,12 +128,11 @@
         {
           "@type": "SoftwareApplication",
           "position": 3,
-          "name": "GitHub Widget",
-          "description": "Track your GitHub stats with dynamic layouts and theme support on iOS home screen using Scriptable.",
-          "programmingLanguage": ["JavaScript"],
-          "applicationCategory": "Productivity",
-          "operatingSystem": "iOS",
-          "url": "",
+          "name": "HMS — Hospital Management System",
+          "description": "Full-stack hospital management system with role-based authentication, patient records, doctor directory, appointment booking, and bed management.",
+          "programmingLanguage": ["Next.js", "Prisma", "PostgreSQL"],
+          "applicationCategory": "BusinessApplication",
+          "url": "https://github.com/svpcet-code/HMS.git",
           "author": {
             "@type": "Person",
             "name": "Shubham Dongare"
@@ -688,51 +687,6 @@
     </footer>
     <!-- Scripts -->
     <script src="./assets/js/script.js"></script>
-    <script>
-        const cards = document.querySelectorAll('.project-card');
-
-        cards.forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transition = 'all 0.05s ease-out';
-            });
-
-            card.addEventListener('mouseleave', () => {
-                card.style.transition = 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
-                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px) scale(1)';
-            });
-
-            card.addEventListener('mousemove', (e) => {
-                if (!isLoaded) return;
-
-                const cardRect = card.getBoundingClientRect();
-                const cardCenterX = cardRect.left + cardRect.width / 2;
-                const cardCenterY = cardRect.top + cardRect.height / 2;
-
-                const deltaX = e.clientX - cardCenterX;
-                const deltaY = e.clientY - cardCenterY;
-
-                const rotateX = (deltaY / cardRect.height) * -15;
-                const rotateY = (deltaX / cardRect.width) * 15;
-
-                const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-                const maxDistance = Math.sqrt(cardRect.width * cardRect.width + cardRect.height * cardRect.height) / 2;
-                const proximity = 1 - Math.min(distance / maxDistance, 1);
-
-                const scale = 1 + (proximity * 0.05);
-                const translateZ = proximity * 20;
-
-                card.style.transform = `
-                        perspective(1000px) 
-                        rotateX(${rotateX}deg) 
-                        rotateY(${rotateY}deg) 
-                        translateZ(${translateZ}px) 
-                        scale(${scale})
-                    `;
-            });
-        });
-
-    </script>
-
 </body>
 
 </html>

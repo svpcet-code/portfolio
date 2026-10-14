@@ -39,10 +39,12 @@ logs/
 *.backup
 *.bak
 
-# Archive files (unless intentional)
+# Archive files and unzipped repo folders
 *.zip
 *.tar.gz
 *.rar
+portfolio-main/
+*-main/
 
 # Personal notes and drafts / Private folder
 notes.txt

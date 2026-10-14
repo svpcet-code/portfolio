@@ -9,7 +9,8 @@
       "image": "",
       "githubUrl": "https://github.com/atharvajoshi189/Orbis.git",
       "liveUrl": "",
-      "featured": true
+      "featured": true,
+      "secondButton": false
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "image": "",
       "githubUrl": "https://github.com/svpcet-code/Life.os.git",
       "liveUrl": "",
-      "featured": true
+      "featured": true,
+      "secondButton": false
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "image": "",
       "githubUrl": "https://github.com/svpcet-code/HMS.git",
       "liveUrl": "",
-      "featured": true
+      "featured": true,
+      "secondButton": false
     }
   ],
   "categories": [
